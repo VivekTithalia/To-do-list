@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.headings {
+  text-align: center;
+}
+.forinput {
+  text-align: center;
+}
+/* .container {
+  text-align: center;
+} */
+input {
+  padding: 10px 28px;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: all .5s linear;
+}
+hr {
+  width: 15%;
+  text-align: center;
+  color: red;
+ 
+}
+
+.btn {
+  padding: 10px 46px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+}
+input:hover{
+  padding: 10px 35px;
+  /* border: 2px solid rgb(165, 42, 42); */
+
+}
+.btn:hover {
+  background-color: red;
+  padding: 10px 50px;
+  border:none;
+}
+.container {
+  /* border:1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+  width: 100%;
+}
+.items {
+  max-width: 266px;
+  width: 100%;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 4px 9px;
+  background: #9d3434;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 3px 3px 10px darkgray;
+  transition: all 0.5s linear;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items:hover{
+  box-shadow: 6px 21px 11px darkgray;
+  background-color: black;
+  color: white;
+}
+.forbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn2{
+  padding: 10px 34px;
+  background-color: #9d3434;
+  color: white;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+}
+
+@media (max-width:768px) {
+  .items{
+    max-width: 320px;
+  }
+ 
+  
+}
+@media (max-width:680px) {
+  .container{
+
+    justify-content: center;
+
+  }
+  .items{
+    max-width: 500px;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  
+}
+@media (max-width:350px) {
+  .btn{
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  
 }
